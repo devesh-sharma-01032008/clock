@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Clock - Digital and Analog</title>
+</head>
+<body>
+    <div class="flex flex-center container  justify-space-bw full-cover-screen wrap">
+        <div class="clock-analog-container flex flex-center full-cover-parent col-2 container">
+            <div class="analog-clock flex-center">
+                <h1 class="multiple-3" id="num-12">12</h1>
+                <h2 id="num-1">1</h2>
+                <h2 id="num-2">2</h2>
+                <h1 class="multiple-3" id="num-3">03</h1>
+                <h2 id="num-4">4</h2>
+                <h2 id="num-5">5</h2>
+                <h1 class="multiple-3" id="num-6">06</h1>
+                <h2 id="num-7">7</h2>
+                <h2 id="num-8">8</h2>
+                <h1 class="multiple-3" id="num-9">09</h1>
+                <h2 id="num-10">10</h2>
+                <h2 id="num-11">11</h2>
+                <div class="hour-hand" id="hour-hand"></div>
+                <div class="minute-hand" id="minute-hand"></div>
+                <div class="second-hand" id="second-hand"></div>
+            </div>
+        </div>
+        <div class="clock-digital-container col-2 text-center flex-center container">
+            <div class="digital-clock flex-center text-center">
+                <h1 id="analog-time">00 : 00 PM</h1>
+            </div>
+        </div>
+    </div>
+    <script src="js/clock.js"></script>
+</body>
+</html>

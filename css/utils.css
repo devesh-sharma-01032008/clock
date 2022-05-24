@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: var(--text-color-1);
+    font-family: Ubtuntu, Roboto, -apple-system, BlinkMacSystemFont, 'Segoe UI', Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+:root{
+    --body-background-color:rgb(13, 6, 138);
+    --clock-background-color:rgba(255, 255, 255, 0.849);
+    --text-color-1 : #ffffff;
+    --hour-hand-color: #000000;
+    --minute-hand-color: #bb04f8;
+    --second-hand-color: #0268f7;
+}
+.container{
+    max-width: 80vw;
+    margin: auto;
+}
+.full-cover-screen{
+    width: 100vw;
+    height: 100vh;
+}
+.full-cover-parent{
+    width: 100%;
+    height: 100%;
+}
+.flex{
+    display: flex;
+}
+.flex-center{
+    align-items: center;
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-space-bw{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+.col-2{
+    flex-basis:50%;
+}
+.wrap{
+    flex-wrap: wrap;
+}

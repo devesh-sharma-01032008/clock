@@ -1,0 +1,147 @@
+body {
+    background: var(--body-background-color);
+}
+h1,h2{
+    z-index: -1000000000000;
+}
+h2{
+    font-size: 3rem;
+}
+.analog-clock {
+    background: var(--clock-background-color);
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    outline: 15px solid red;
+}
+
+.analog-clock::before {
+    content: "";
+    background: var(--body-background-color);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100000;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    height: 5px;
+    position: absolute;
+    background: var(--body-background-color);
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    transform-origin: 0px;
+    transform: translate(-50%,-50%);
+}
+.hour-hand{
+    width: 70px;
+    height: 15px;
+    background: var(--hour-hand-color);
+}
+.minute-hand{
+    height: 10px;
+    width: 100px;
+    left: 50%;
+    top: 50%;
+    background:  var(--minute-hand-color);
+}
+
+.second-hand{
+    width: 130px;
+    background: var(--second-hand-color);
+}
+
+.multiple-3{
+    font-size: 5rem;
+}
+
+#num-12{
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#num-1{
+    position: absolute;
+    top: -5%;
+    left: 86%;
+    transform: translate(-50%,-50%);
+}
+#num-2{
+    position: absolute;
+    top: 18%;
+    left: 108%;
+    transform: translate(-50%,-50%);
+}
+
+
+#num-3{
+    position: absolute;
+    top: 50%;
+    left: 123%;
+    transform: translate(-50%,-50%);
+}
+#num-4{
+    position: absolute;
+    top: 80%;
+    left: 104%;
+    transform: translate(-50%,-50%);
+}
+
+#num-5{
+    position: absolute;
+    top: 105%;
+    left: 85%;
+    transform: translate(-50%,-50%);
+}
+#num-6{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#num-7{
+    position: absolute;
+    top: 103%;
+    right: 80%;
+    transform: translate(-50%,-50%);
+}
+#num-8{
+    position: absolute;
+    top: 80%;
+    right: 98%;
+    transform: translate(-50%,-50%);
+}
+
+#num-9{
+    position: absolute;
+    top: 50%;
+    left: -24%;
+    transform: translate(-50%,-50%);
+}
+#num-10{
+    position: absolute;
+    top: 15%;
+    left: -10%;
+    transform: translate(-50%,-50%);
+}
+#num-11{
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+
+#analog-time{
+    font-size: 4rem;
+}
